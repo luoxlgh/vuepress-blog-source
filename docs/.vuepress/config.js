@@ -22,7 +22,7 @@ module.exports = {
             { text: 'Home', link: '/' },
             { text: 'Front-end', link: '/front-end/vuepress-build/' },
             // ...navArr,
-            { text: 'GitHub', link: 'https://github.com/luoxlgh/vuepress-blog' },
+            { text: 'GitHub', link: 'https://github.com/luoxlgh/vuepress-blog-source' },
         ],
         sidebar: {
             '/front-end/': [

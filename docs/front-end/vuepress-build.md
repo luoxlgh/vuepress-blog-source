@@ -6,13 +6,13 @@ This is a record of build steps, problem encountered and optimizable todos.
 
 ## Steps
 - Follow the steps on [VuePress](https://vuepress.vuejs.org/).
-- Use default theme config, set navbar and sidebar configs in config.js as follow. The source code of the project is [GitHub](https://github.com/luoxlgh/vuepress-blog).
+- Use default theme config, set navbar and sidebar configs in config.js as follow. The source code of the project is [GitHub](https://github.com/luoxlgh/vuepress-blog-source).
 ```js
 themeConfig: {
     nav: [
         { text: 'Home', link: '/' },
         { text: 'Front-end', link: '/front-end/' },
-        { text: 'GitHub', link: 'https://github.com/luoxlgh/vuepress-blog' },
+        { text: 'GitHub', link: 'https://github.com/luoxlgh/vuepress-blog-source' },
     ],
     sidebar: {
         '/front-end/': [{
