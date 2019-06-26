@@ -4,7 +4,7 @@ const path = require('path');
 // const navArr = getNavArr();;
 
 module.exports = {
-    base: '/vuepressblog/',
+    base: '/vuepress-blog/',
     title: "Luoxl's Blog",
     description: 'Just playing around',
     head: [
