@@ -13,19 +13,27 @@ module.exports = {
     configureWebpack: {
         resolve: {
             alias: {
-                assets: path.resolve(__dirname, 'assets'),
+                // $codes: path.resolve(__dirname, 'codes'),
             }
         },
     },
     themeConfig: {
         nav: [
             { text: 'Home', link: '/' },
-            { text: 'Front-end', link: '/front-end/vuepress-build/' },
+            { text: 'Front-end', link: '/front-end/' },
+            { text: 'Computer Science', link: '/computer/' },
             // ...navArr,
             { text: 'GitHub', link: 'https://github.com/luoxlgh/vuepress-blog-source' },
         ],
         sidebar: {
             '/front-end/': [
+                {
+                    title: 'Overview',
+                    collapsable: false,
+                    children: [
+                        '',
+                    ],
+                },
                 {
                     title: '工具',
                     collapsable: false,
@@ -38,6 +46,26 @@ module.exports = {
                     collapsable: false,
                     children: [
                         'request',
+                    ],
+                },
+            ],
+            '/computer/': [
+                {
+                    title: 'Overview',
+                    collapsable: false,
+                    children: [
+                        '',
+                    ],
+                },
+                {
+                    title: '算法',
+                    collapsable: false,
+                    children: [
+                        'algorithm',
+                        'hash',
+                        'slidingWindow',
+                        'search',
+                        'string',
                     ],
                 },
             ],
