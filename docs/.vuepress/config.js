@@ -17,6 +17,9 @@ module.exports = {
             }
         },
     },
+    markdown: {
+        lineNumbers: true,
+    },
     themeConfig: {
         nav: [
             { text: 'Home', link: '/' },
@@ -62,10 +65,15 @@ module.exports = {
                     collapsable: false,
                     children: [
                         'algorithm',
+                        'array',
                         'hash',
+                        'dp',
                         'slidingWindow',
                         'search',
                         'string',
+                        'robustness',
+                        'conversion',
+                        'others',
                     ],
                 },
             ],
