@@ -13,7 +13,7 @@
 按照常用算法分为：
 - [查找](/computer/search.html)
 - 排序
-- 递归/迭代/回溯
+- [递归/迭代/回溯](/computer/backTracing.html)
 - 贪心算法
 - [动态规划](/computer/dp.html)
 - two pointers
