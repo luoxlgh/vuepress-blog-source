@@ -65,7 +65,7 @@ module.exports = {
                     collapsable: false,
                     children: [
                         'algorithm',
-                        'backTracing',
+                        'backTracking',
                         'array',
                         'hash',
                         'dp',

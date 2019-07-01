@@ -13,7 +13,7 @@
 按照常用算法分为：
 - [查找](/computer/search.html)
 - 排序
-- [递归/迭代/回溯](/computer/backTracing.html)
+- [递归/迭代/回溯](/computer/backTracking.html)
 - 贪心算法
 - [动态规划](/computer/dp.html)
 - two pointers
@@ -22,7 +22,7 @@
 - [进制转换](/computer/conversion.html)
 
 其他：
-- [鲁棒性（溢出）](/computer/robustness.html)
+- [鲁棒性（溢出, 下标）](/computer/robustness.html)
 - [找规律](/computer/others.html)
 
 表情释义：
