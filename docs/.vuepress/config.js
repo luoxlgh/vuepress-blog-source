@@ -77,6 +77,13 @@ module.exports = {
                         'others',
                     ],
                 },
+                {
+                    title: 'All About Mac',
+                    collapsable: false,
+                    children: [
+                        'How-to-use-mac',
+                    ],
+                },
             ],
         },
     },
