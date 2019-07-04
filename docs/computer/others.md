@@ -8,3 +8,15 @@
 
 <<< @/codes/31.next-permutation.js
 
+## [Permutation Sequence](https://leetcode.com/problems/permutation-sequence/)
+
+Given n and k, return the kth permutation sequence.
+
+- 用 next permutation 的方法依次寻找。
+- 找规律。对于 "xyzu" 中的 y， 后面的排列组合个数为 1*2 = 2种，即 1*2...*n。
+
+<<< @/codes/60.permutation-sequence.js
+
+
+
+
