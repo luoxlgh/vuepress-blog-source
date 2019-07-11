@@ -27,3 +27,9 @@ Given an input string (s) and a pattern (p), implement regular expression matchi
     - `*` 之前的字符可以匹配当前字符。`dp[i-1][j] || dp[i][j-1] || d[i][j-2]`。依次表示匹配n次，1次和0次。
 
 <<< @/codes/10.regular-expression-matching.js
+
+## [Super Egg Drop](https://leetcode.com/problems/super-egg-drop/)
+
+题目：有`K`个鸡蛋，和一个`1-N`层的建筑。在这个建筑中，对于`F`层以上的鸡蛋都会摔碎，以下的不会碎。求在`K`个鸡蛋碎掉之前，最少扔多少次鸡蛋，可找到这个`F`。
+
+题意看了半天才明白意思。在鸡蛋充足的情况下，二分的方法可以最快的找到这个`F`。在鸡蛋个数小于二分需要的鸡蛋个数的情况下，保守做法是从最低开始慢慢往上加楼层，这种做法次数也是最多的。
