@@ -54,5 +54,57 @@ function greeter(person) {
 var user = new Student("Jane", "M.", "User");
 ```
 
-## 相关语法
-###
+## 数据类型
+### 原始数据类型
+boolean, number, string, undefined, null。基本类型与构造器类型有区别：
+``` ts{3}
+let b: boolean = true;
+let b2: boolean = Boolean(true);
+let b1: Boolean = new Boolean(true);
+```
+### 空值
+- undefined | null: `let u: undefined = undefined;let n: null = null;`
+- void 表示空，常用与函数返回值。用于变量的时候只能将该变量赋值为 `undefined` 或者 `null`。`undefined` 或者 `null` 可以被赋值给任何类型的变量。
+
+### any
+未声明类型的变量或者声明为 `any` 类型的变量可以被赋值为任意类型的值。
+``` ts
+let s: any = 'test';
+s = 1; // 不会报错
+```
+
+### 类型推论
+类型会被设置为初始设置的值。**这里与未声明类型的变量有区别，下例中的 s 类型为 any，s1 类型推断为 string**
+```ts
+let s;
+s = 'test';
+s = 1;
+
+let s1 = 'test';
+s1 = 1; // error: Type 'number' is not assignable to type 'string'
+```
+### 联合类型
+类型可为多种。当 TypeScript 不确定一个联合类型的变量到底是哪个类型的时候，我们只能访问此联合类型的所有类型里共有的属性或方法。<br/>目前感觉使用联合类型有些麻烦（接口定义可以使用），如果是面向强类型的编程最好是不要用吧。
+### 类型断言
+将类型指定为联合类型中的某一种。用于避免联合类型导致的报错。
+```ts{7}
+function getLength(something: string | number): number {
+    if (something.length) { // error: Property 'length' does not exist on type 'number'.
+        return something.length;
+    }
+}
+function getLength(something: string | number): number {
+    if (<string>something.length) {
+        return something.length;
+    }
+}
+```
+类型断言不允许将类型断言为联合类型中没有的类型。
+
+## 接口
+定义一个接口。[参考](https://github.com/xcatliu/typescript-tutorial/blob/master/basics/type-of-object-interfaces.md)
+
+## 声明
+声明的语法为：`declare const test = `
+### 声明文件
+文件后缀为 `.d.ts`。会解析改文件类型，作为声明。社区已为我们声明好了一些公共库（如 jQuery），可在[该链接](https://microsoft.github.io/TypeSearch/)搜索。
