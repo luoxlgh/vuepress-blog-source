@@ -87,6 +87,13 @@ module.exports = {
                         'How-to-use-mac',
                     ],
                 },
+                {
+                    title: 'All About Windows',
+                    collapsable: false,
+                    children: [
+                        'How-to-use-windows',
+                    ],
+                },
             ],
         },
     },
